@@ -1,8 +1,14 @@
-<Project Sdk="Microsoft.NET.Sdk" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net6</TargetFramework>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+    <EnableDefaultNoneItems>false</EnableDefaultNoneItems>
+  </PropertyGroup>
   <ItemGroup>
     <Compile Include="HelloWorld.cs"/>
   </ItemGroup>
-  <Target Name="Build">
+  <!-- <Target Name="Build">
     <Csc Sources="@(Compile)"/>
-  </Target>
+  </Target> -->
 </Project>
